@@ -73,8 +73,8 @@ Kode ini berfungsi sebagai pengatur utama alur aplikasi (router) yang menentukan
 ##### ![Gambar 1](database1.png).
 Membuat database dengan nama db_event.
 ##### ![Gambar 1](database2.png).
-##### ![Gambar 1](database1.png).
-##### ![Gambar 1](database1.png).
+##### ![Gambar 1](database4.png).
+##### ![Gambar 1](database5.png).
 Membuat tabel user berisikan id,username,dan password.
 ##### ![Gambar 1](database3.png).
 Membuat tabel events berisikan id,nama evetnt,tanggal,lokasi,dan deskripsi.
