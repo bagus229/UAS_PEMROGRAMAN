@@ -1,0 +1,265 @@
+/* ===== GLOBAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+    min-height: 100vh;
+    color: #2c3e50;
+}
+
+/* ===== LAYOUT ===== */
+.app {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+/* ===== LOGIN ===== */
+.login-card {
+    max-width: 380px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.login-card h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ===== HEADINGS ===== */
+h2 {
+    margin: 25px 0 15px;
+    border-left: 6px solid #3498db;
+    padding-left: 12px;
+}
+
+/* ===== FORM ===== */
+form {
+    margin-top: 15px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #ccd6dd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* ===== BUTTON GLOBAL ===== */
+button {
+    background: linear-gradient(135deg, #3498db, #2d89ef);
+    color: #fff;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2d89ef, #1b6fd8);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(52,152,219,0.35);
+}
+
+/* ===== LINK JADI BUTTON ===== */
+a[href*="add"],
+a[href*="edit"],
+a[href*="delete"],
+a[href*="logout"],
+a[href*="store"],
+a[href*="update"],
+a[href*="dashboard"],
+a[href*="event"] {
+    display: inline-block;
+    background: #ecf0f1;
+    color: #2c3e50;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 5px;
+    transition: all 0.2s ease;
+}
+
+a[href*="add"]:hover,
+a[href*="edit"]:hover,
+a[href*="dashboard"]:hover,
+a[href*="event"]:hover {
+    background: #dfe6e9;
+}
+
+a[href*="delete"] {
+    background: #e74c3c;
+    color: #fff;
+}
+
+a[href*="delete"]:hover {
+    background: #c0392b;
+}
+
+a[href*="logout"] {
+    background: #95a5a6;
+    color: #fff;
+}
+
+a[href*="logout"]:hover {
+    background: #7f8c8d;
+}
+
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th {
+    background: #3498db;
+    color: #fff;
+    padding: 12px;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+table tr:hover {
+    background: #f5faff;
+}
+
+/* ===== SEARCH ===== */
+.search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.search input[type="text"] {
+    width: 200px;
+    padding: 8px 10px;
+}
+
+/* ===== PAGINATION (SUDAH DIRAPIKAN) ===== */
+.pagination {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center; /* JUSTIFY CENTER */
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.pagination a,
+.pagination strong {
+    min-width: 38px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #3498db;
+    text-decoration: none;
+}
+
+/* ===== PAGINATION WRAPPER (AMAN DARI CSS LAIN) ===== */
+.pagination-wrapper {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-wrapper .pagination {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.pagination-wrapper .pagination a,
+.pagination-wrapper .pagination strong {
+    min-width: 38px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #3498db;
+}
+
+/* Link */
+.pagination-wrapper .pagination a {
+    background: #fff;
+    color: #3498db;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.pagination-wrapper .pagination a:hover {
+    background: #3498db;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Active */
+.pagination-wrapper .pagination strong {
+    background: #3498db;
+    color: #fff;
+}
+
+
+/* Active page */
+.pagination strong {
+    background: #3498db;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(52,152,219,0.4);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .app {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search input {
+        width: 100%;
+    }
+}
