@@ -104,7 +104,7 @@ Membuat tabel user berisikan id,username,dan password.
 ##### ![Gambar 1](database6.png).
 Membuat tabel events berisikan id,nama evetnt,tanggal,lokasi,dan deskripsi.
 
-## Alur Program Dan Fungsional Sistem
+## Alur Program Dan Fungsional Sistem Aplikasi List Agenda
 ## 1. Login
 ##### ![Gambar 1](admin1.png).
 ##### ![Gambar 1](user1.png).
