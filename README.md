@@ -99,3 +99,14 @@ Membuat tabel user berisikan id,username,dan password.
 ##### ![Gambar 1](database3.png).
 ##### ![Gambar 1](database6.png).
 Membuat tabel events berisikan id,nama evetnt,tanggal,lokasi,dan deskripsi.
+
+## Alur Program Dan Fungsional Sistem
+## 1. Role Admin
+Login(Admin)
+##### ![Gambar 1](admin1.png).
+Admin terlebih dahulu login dengan username:admin dan password:admin123. kemudian tekan tombol login.
+
+Dashboard
+##### ![Gambar 1](admin2.png).
+Setelah login admin akan diarahkan oleh sistem ke halaman dashboard. terdapata ucapan selamat datang dan salam waktu kepada pengguna. terdapat tombol list event dan logout(jika admin ingin keluar dari aplikasi). admin lalu menekan tombol list event.
+
