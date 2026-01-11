@@ -6,14 +6,63 @@
 # Deskripsi:
 Aplikasi List Agenda adalah sebuah aplikasi web sederhana yang digunakan untuk membantu pengguna dalam mengelola daftar agenda atau kegiatan secara terstruktur dan dapat diterapkan pada lingkungan perusahaan. Aplikasi ini dibuat untuk mempermudah pengguna agar tidak lupa terhadap jadwal atau kegiatan penting yang akan dilakukan. Dalam penggunaannya, aplikasi ini menerapkan pembagian hak akses, di mana role admin memiliki spesial akses berupa menambah, mengedit, dan menghapus data agenda, sedangkan role user hanya dapat melihat data agenda serta menggunakan fitur pencarian dan pagination/halaman untuk mempermudah pencarian data. Aplikasi List Agenda juga dilengkapi dengan tampilan yang sederhana dan mudah dipahami sehingga dapat digunakan dengan nyaman. Secara keseluruhan, aplikasi ini dirancang sebagai solusi praktis untuk membantu pengelolaan agenda harian maupun jangka panjang secara lebih tertata dan efisien.
 
+## Penjelasan Program
+Aplikasi List Agenda merupakan aplikasi berbasis web yang digunakan untuk mengelola data agenda atau kegiatan secara terstruktur. Aplikasi ini diawali dengan proses login untuk membatasi hak akses pengguna. Setelah berhasil login, pengguna akan diarahkan ke halaman dashboard sebagai halaman utama aplikasi.
+Sistem menerapkan pembagian hak akses berdasarkan peran pengguna, yaitu admin dan user. Admin memiliki kewenangan penuh untuk mengelola data agenda, mulai dari menambahkan, mengubah, hingga menghapus data event. Sementara itu, user hanya dapat melihat daftar event, melakukan pencarian data, serta menggunakan fitur pagination untuk mempermudah penelusuran data. Seluruh data agenda disimpan ke dalam database dan ditampilkan dalam bentuk tabel yang dilengkapi dengan fitur pencarian dan pembagian halaman. Aplikasi ini dirancang dengan tampilan yang sederhana agar mudah digunakan dan membantu pengguna dalam mengelola jadwal kegiatan secara efektif dan efisien.
+
 # Langkah-langkah
 
 ## Struktur Folder:
 ###### ![Gambar 1](Struktur.png).
 
-## Penjelasan Program
-Aplikasi List Agenda merupakan aplikasi berbasis web yang digunakan untuk mengelola data agenda atau kegiatan secara terstruktur. Aplikasi ini diawali dengan proses login untuk membatasi hak akses pengguna. Setelah berhasil login, pengguna akan diarahkan ke halaman dashboard sebagai halaman utama aplikasi.
-Sistem menerapkan pembagian hak akses berdasarkan peran pengguna, yaitu admin dan user. Admin memiliki kewenangan penuh untuk mengelola data agenda, mulai dari menambahkan, mengubah, hingga menghapus data event. Sementara itu, user hanya dapat melihat daftar event, melakukan pencarian data, serta menggunakan fitur pagination untuk mempermudah penelusuran data. Seluruh data agenda disimpan ke dalam database dan ditampilkan dalam bentuk tabel yang dilengkapi dengan fitur pencarian dan pembagian halaman. Aplikasi ini dirancang dengan tampilan yang sederhana agar mudah digunakan dan membantu pengguna dalam mengelola jadwal kegiatan secara efektif dan efisien.
+## Fungsional Sistem Aplikasi List Agenda
+## 1. Login
+##### ![Gambar 1](admin1.png).
+##### ![Gambar 1](user1.png).
+Admin dan user terlebih dahulu login dengan username:admin dan password:admin123, username:user dan password:user123. Sistem akan memverifikasi data yang dimasukkan dan menentukan hak akses pengguna berdasarkan rolenya yakni admini dan user. kemudian tekan tombol login.
+
+## 2. Dashboard
+##### ![Gambar 1](admin3.png).
+Setelah login admin dan user akan diarahkan oleh sistem ke halaman dashboard. dashboard ini memudahkan pengguna untuk mengakses ke halaman dan fitur lainnya. terdapat ucapan selamat datang dan salam waktu kepada pengguna. terdapat fitur list event dan logout(jika admin dan user ingin keluar dari aplikasi). lalu menekan tombol list event.
+
+## 3. List/Daftar Event
+Menampilkan seluruh data agenda yang tersimpan di dalam sistem yang berbentuk tabel. Informasi yang ditampilkan meliputi nama event, tanggal, lokasi, dan deskripsi. Halaman ini dapat diakses oleh admin maupun user, namun hak akses yang diberikan berbeda sesuai dengan role pengguna.
+Role admin:
+##### ![Gambar 1](admin4.png).
+Di halaman ini admin dapat mmenggunakan fitur CRUD, kolom pencarian, pagination, dan tombol kembali untuk kembali ke dashboard.
+##### ![Gambar 1](user2.png).
+User pada daftar event ini hanya dapat melihat tabel list event. user juga bisa menggunakan fitur kolom pencarian, pagination, dan tombol kembali.
+
+## 4. Tambah Event
+##### ![Gambar 1](admin5.png).
+Fitur tambah event hanya dapat digunakan oleh role admin. Pada fitur ini admin dapat menambahkan data agenda baru dengan mengisi form yang berisi nama event, tanggal, lokasi, dan deskripsi. Setelah data disimpan, event baru akan ditampilkan pada halaman daftar event. terdapat juga tombol batal apabila tidak jadi untuk menambahkan event tersebut.
+
+## 5. Edit Event
+##### ![Gambar 1](admin6.png).
+Halaman edit event digunakan role admin untuk mengubah data event yang sudah ada. Form edit akan menampilkan data lama yang dapat diperbarui sesuai kebutuhan pengguna. Setelah proses penyimpanan, perubahan data akan langsung diterapkan dan ditampilkan pada daftar event. tombol batal untuk tidak jadi update agenda.
+
+## 6. Hapus Event
+##### ![Gambar 1](admin7.png).
+Fitur hapus event memungkinkan admin untuk menghapus data agenda yang tidak lagi dibutuhkan. Sebelum data dihapus, sistem akan menampilkan konfirmasi untuk memastikan aksi tersebut. Setelah dihapus, data event akan hilang dari sistem dan database. bisa menggunakan tombol cancel apabila hapus tidak jadi.
+
+## 7. Kolom Pencarian
+Fitur ini digunakan untuk membantu pengguna menemukan data event tertentu dengan lebih cepat. Pengguna dapat memasukkan kata kunci pada kolom pencarian, kemudian sistem akan menampilkan data event yang sesuai dengan kata kunci tersebut. Fitur ini tersedia untuk admin dan user.
+Admin:
+##### ![Gambar 1](admin8.png).
+User:
+##### ![Gambar 1](user3.png).
+
+## 8. Pagination
+Fitur ini untuk membagi data event ke dalam beberapa halaman agar tampilan data lebih rapi dan mudah dibaca. Dari adanya pagination, pengguna dapat berpindah antar halaman untuk melihat data event lainnya tanpa harus menampilkan seluruh data dalam satu halaman.
+Admin:
+##### ![Gambar 1](admin4.png).
+User:
+##### ![Gambar 1](user2.png).
+
+## 9. Logout
+Fitur logout digunakan untuk mengakhiri sesi ketika user dan admin sudah ingin keluar dari aplikasi. Setelah logout, sistem akan menghapus sesi pengguna dan mengarahkan kembali ke halaman login. Fitur ini bertujuan untuk menjaga keamanan aplikasi, terutama jika aplikasi digunakan pada perangkat bersama.
+##### ![Gambar 1](admin3.png).
+
 
 ## Kode Program
 1. AuthController.php
@@ -104,50 +153,3 @@ Membuat tabel user berisikan id,username,dan password.
 ##### ![Gambar 1](database6.png).
 Membuat tabel events berisikan id,nama evetnt,tanggal,lokasi,dan deskripsi.
 
-## Alur Program Dan Fungsional Sistem Aplikasi List Agenda
-## 1. Login
-##### ![Gambar 1](admin1.png).
-##### ![Gambar 1](user1.png).
-Admin dan user terlebih dahulu login dengan username:admin dan password:admin123, username:user dan password:user123. Sistem akan memverifikasi data yang dimasukkan dan menentukan hak akses pengguna berdasarkan rolenya yakni admini dan user. kemudian tekan tombol login.
-
-## 2. Dashboard
-##### ![Gambar 1](admin3.png).
-Setelah login admin dan user akan diarahkan oleh sistem ke halaman dashboard. dashboard ini memudahkan pengguna untuk mengakses ke halaman dan fitur lainnya. terdapat ucapan selamat datang dan salam waktu kepada pengguna. terdapat fitur list event dan logout(jika admin dan user ingin keluar dari aplikasi). lalu menekan tombol list event.
-
-## 3. List/Daftar Event
-Menampilkan seluruh data agenda yang tersimpan di dalam sistem yang berbentuk tabel. Informasi yang ditampilkan meliputi nama event, tanggal, lokasi, dan deskripsi. Halaman ini dapat diakses oleh admin maupun user, namun hak akses yang diberikan berbeda sesuai dengan role pengguna.
-Role admin:
-##### ![Gambar 1](admin4.png).
-Di halaman ini admin dapat mmenggunakan fitur CRUD, kolom pencarian, pagination, dan tombol kembali untuk kembali ke dashboard.
-##### ![Gambar 1](user2.png).
-User pada daftar event ini hanya dapat melihat tabel list event. user juga bisa menggunakan fitur kolom pencarian, pagination, dan tombol kembali.
-
-## 4. Tambah Event
-##### ![Gambar 1](admin5.png).
-Fitur tambah event hanya dapat digunakan oleh role admin. Pada fitur ini admin dapat menambahkan data agenda baru dengan mengisi form yang berisi nama event, tanggal, lokasi, dan deskripsi. Setelah data disimpan, event baru akan ditampilkan pada halaman daftar event. terdapat juga tombol batal apabila tidak jadi untuk menambahkan event tersebut.
-
-## 5. Edit Event
-##### ![Gambar 1](admin6.png).
-Halaman edit event digunakan role admin untuk mengubah data event yang sudah ada. Form edit akan menampilkan data lama yang dapat diperbarui sesuai kebutuhan pengguna. Setelah proses penyimpanan, perubahan data akan langsung diterapkan dan ditampilkan pada daftar event. tombol batal untuk tidak jadi update agenda.
-
-## 6. Hapus Event
-##### ![Gambar 1](admin7.png).
-Fitur hapus event memungkinkan admin untuk menghapus data agenda yang tidak lagi dibutuhkan. Sebelum data dihapus, sistem akan menampilkan konfirmasi untuk memastikan aksi tersebut. Setelah dihapus, data event akan hilang dari sistem dan database. bisa menggunakan tombol cancel apabila hapus tidak jadi.
-
-## 7. Kolom Pencarian
-Fitur ini digunakan untuk membantu pengguna menemukan data event tertentu dengan lebih cepat. Pengguna dapat memasukkan kata kunci pada kolom pencarian, kemudian sistem akan menampilkan data event yang sesuai dengan kata kunci tersebut. Fitur ini tersedia untuk admin dan user.
-Admin:
-##### ![Gambar 1](admin8.png).
-User:
-##### ![Gambar 1](user3.png).
-
-## 8. Pagination
-Fitur ini untuk membagi data event ke dalam beberapa halaman agar tampilan data lebih rapi dan mudah dibaca. Dari adanya pagination, pengguna dapat berpindah antar halaman untuk melihat data event lainnya tanpa harus menampilkan seluruh data dalam satu halaman.
-Admin:
-##### ![Gambar 1](admin4.png).
-User:
-##### ![Gambar 1](user2.png).
-
-## 9. Logout
-Fitur logout digunakan untuk mengakhiri sesi ketika user dan admin sudah ingin keluar dari aplikasi. Setelah logout, sistem akan menghapus sesi pengguna dan mengarahkan kembali ke halaman login. Fitur ini bertujuan untuk menjaga keamanan aplikasi, terutama jika aplikasi digunakan pada perangkat bersama.
-##### ![Gambar 1](admin3.png).
