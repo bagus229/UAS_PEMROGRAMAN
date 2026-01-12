@@ -6,9 +6,10 @@
 # Deskripsi:
 Aplikasi List Agenda adalah sebuah aplikasi web sederhana yang digunakan untuk membantu pengguna dalam mengelola daftar agenda atau kegiatan secara terstruktur dan dapat diterapkan pada lingkungan perusahaan. Aplikasi ini dibuat untuk mempermudah pengguna agar tidak lupa terhadap jadwal atau kegiatan penting yang akan dilakukan. Dalam penggunaannya, aplikasi ini menerapkan pembagian hak akses, di mana role admin memiliki spesial akses berupa menambah, mengedit, dan menghapus data agenda, sedangkan role user hanya dapat melihat data agenda serta menggunakan fitur pencarian dan pagination/halaman untuk mempermudah pencarian data. Aplikasi List Agenda juga dilengkapi dengan tampilan yang sederhana dan mudah dipahami sehingga dapat digunakan dengan nyaman. Secara keseluruhan, aplikasi ini dirancang sebagai solusi praktis untuk membantu pengelolaan agenda harian maupun jangka panjang secara lebih tertata dan efisien.
 
-## Penjelasan Program
-Aplikasi List Agenda merupakan aplikasi berbasis web yang digunakan untuk mengelola data agenda atau kegiatan secara terstruktur. Aplikasi ini diawali dengan proses login untuk membatasi hak akses pengguna. Setelah berhasil login, pengguna akan diarahkan ke halaman dashboard sebagai halaman utama aplikasi.
-Sistem menerapkan pembagian hak akses berdasarkan peran pengguna, yaitu admin dan user. Admin memiliki kewenangan penuh untuk mengelola data agenda, mulai dari menambahkan, mengubah, hingga menghapus data event. Sementara itu, user hanya dapat melihat daftar event, melakukan pencarian data, serta menggunakan fitur pagination untuk mempermudah penelusuran data. Seluruh data agenda disimpan ke dalam database dan ditampilkan dalam bentuk tabel yang dilengkapi dengan fitur pencarian dan pembagian halaman. Aplikasi ini dirancang dengan tampilan yang sederhana agar mudah digunakan dan membantu pengguna dalam mengelola jadwal kegiatan secara efektif dan efisien.
+## Tujuan
+1. Membuat aplikasi beradasrkan OOP dan Modular dengan menggunakan Routing App (gunakan .htaccess).
+2. Sistem yang mempunyai logi dengan role admin dan user.
+3. Mempunyai sistem dengan menggunakan CRUD, kolom pancarian, dan Pagination.
 
 # Langkah-langkah
 
@@ -152,4 +153,7 @@ Membuat tabel user berisikan id,username,dan password.
 ##### ![Gambar 1](database3.png).
 ##### ![Gambar 1](database6.png).
 Membuat tabel events berisikan id,nama evetnt,tanggal,lokasi,dan deskripsi.
+
+## Kesimpulan 
+Pembuatan aplikasi List Agenda bertujuan untuk membantu pengguna dalam mengatur dan mengelola agenda kegiatan agar tidak terlewat atau terlupa. Dengan adanya fitur login dan pembagian hak akses antara admin dan user, penggunaan aplikasi menjadi lebih aman dan tertata. Admin dapat mengelola data event secara penuh, sementara user dapat melihat dan mencari agenda dengan mudah. Ditambah dengan fitur pencarian dan pagination, aplikasi ini terasa lebih praktis dan nyaman digunakan. Secara keseluruhan, aplikasi List Agenda dapat menjadi solusi sederhana yang bermanfaat dalam membantu pengelolaan agenda kegiatan sehari-hari. Aplikasi List Agenda ini dibuat sebagai bagian dari tugas Ujian Akhir Semester (UAS) dengan tujuan menerapkan konsep dan materi yang telah dipelajari selama perkuliahan ke dalam sebuah project aplikasi sederhana.
 
